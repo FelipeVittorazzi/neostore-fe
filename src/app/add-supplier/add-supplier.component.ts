@@ -34,7 +34,7 @@ export class AddSupplierComponent implements OnInit {
         }
       },
         async error => {
-          this.toastr.error(error.message);
+          this.toastr.error(error.error);
           setTimeout(() => {
             this.router.navigate(['/Home']);
           }, 500);
